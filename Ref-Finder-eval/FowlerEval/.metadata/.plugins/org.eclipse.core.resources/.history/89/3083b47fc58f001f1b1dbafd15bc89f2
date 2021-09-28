@@ -1,0 +1,10 @@
+package people;
+
+public class Manager extends Person {
+	int _year;
+	
+	public int getBonus(){
+		_rate = _year * 2;
+		return _salary * _rate;
+	}
+}

@@ -1,0 +1,5 @@
+package org.gjt.sp.jedit.bsh;
+
+public class LHSVariable {
+
+}

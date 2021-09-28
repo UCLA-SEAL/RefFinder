@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;public int abcd()&apos; from &apos;Computation.computeCharge1()&apos; to &apos;Computation&apos;&#x0D;&#x0A;- Original project: &apos;example&apos;&#x0D;&#x0A;- Method name: &apos;abcd&apos;&#x0D;&#x0A;- Destination type: &apos;Computation&apos;&#x0D;&#x0A;- Declared visibility: &apos;public&apos;" comments="false" description="Extract method &apos;abcd&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src&lt;{Computation.java" name="abcd" replace="false" selection="1026 31" stamp="1275256613894" version="1.0" visibility="1"/>
+</session>

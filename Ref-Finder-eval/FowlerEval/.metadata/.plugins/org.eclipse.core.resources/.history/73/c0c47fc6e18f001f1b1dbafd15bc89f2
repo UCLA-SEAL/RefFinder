@@ -1,0 +1,20 @@
+package account;
+
+public class Caller {
+	
+	public void call(){
+		try{
+				Account s = new Account();
+				s.withdraw(23);
+				System.out.println("haha");
+		}catch (BalanceException e){
+			System.out.println("eerror");
+		}
+	}
+	
+	public void testing(){
+		Account s = new Account();
+		if(s == null) System.out.println("error");
+		else s.getPlan();
+	}
+}

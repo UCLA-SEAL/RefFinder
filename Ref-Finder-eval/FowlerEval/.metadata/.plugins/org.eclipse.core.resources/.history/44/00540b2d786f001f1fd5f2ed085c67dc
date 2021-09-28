@@ -1,0 +1,15 @@
+package org.gjt.sp.jedit.bsh;
+
+public class LHSProperties extends LHS {
+	
+	LHSProperties( Object object, String propName )
+	{
+		if(object == null)
+			throw new NullPointerException("constructed empty LHS");
+
+		type = PROPERTY;
+		this.object = object;
+		this.propName = propName;
+	}
+
+}

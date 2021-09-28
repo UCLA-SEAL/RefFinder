@@ -1,0 +1,13 @@
+package org.gjt.sp.jedit.bsh;
+
+public class LHSVariable extends LHS {
+
+	LHSVariable( NameSpace nameSpace, String varName, boolean localVar )
+	{
+		type = VARIABLE;
+		this.localVar = localVar;
+		this.varName = varName;
+		this.nameSpace = nameSpace;
+	}
+
+}

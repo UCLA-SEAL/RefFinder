@@ -1,0 +1,637 @@
+before_conditional("xi<Math.min(x1,x2)||xi>Math.max(x1,x2)","returnnull","","geometry%.Segment#getIntersection(geometry%.Segment)").
+before_method("sample1%.PrettyPrinter#printTail()","printTail()","sample1%.PrettyPrinter").
+before_calls("geometry%.Segment#toString()","geometry%.Point#toString()").
+before_calls("geometry%.Segment#getLength()","java.lang%.Math#sqrt(double)").
+before_conditional("pt.x<min_x","pt.x","","geometry%.Polygon#isInside(geometry%.Point)").
+before_conditional("p.x>max_x||p.y>max_y||p.x<min_x||p.y<min_y","returnfalse","","geometry%.Polygon#isInside(geometry%.Point)").
+before_parameter("%.Polygon#calcArea","shapes%.Polygon#calcArea()","").
+before_return("geometry%.Segment#getIntersection(geometry%.Segment)","geometry%.Point").
+before_type("shapes%.Triangle","Triangle","shapes").
+before_methodmodifier("geometry%.Segment#toString()","public").
+before_return("sample1%.Sample1#printHeader()","void").
+before_conditional("s1.getIntersection(s2)!=null","returnfalse","","geometry%.Polygon#isSelfOverlap()").
+before_methodbody("shapes%.Quadrilateral#numSides()","{   return 3; } ").
+before_calls("geometry%.Polygon#toString()","java.util%.Iterator#next()").
+before_accesses("geometry%.Segment#pt1","geometry%.Segment#<init>(geometry%.Point,geometry%.Point)").
+before_parameter("%.Polyline#toString","geometry%.Polyline#toString()","").
+before_subtype("shapes%.Polygon","shapes%.Triangle").
+before_field("shapes%.Rectangle#height","height","shapes%.Rectangle").
+before_calls("geometry%.Segment#getIntersection(geometry%.Segment)","java.lang%.Math#max(int,int)").
+before_subtype("shapes%.Equiangular","shapes%.Rectangle").
+before_method("sample1%.Sample1#printHeader()","printHeader()","sample1%.Sample1").
+before_return("geometry%.Segment#<init>(geometry%.Point,geometry%.Point)","void").
+before_accesses("geometry%.Point#x","geometry%.Segment#getLength()").
+before_return("shapes%.Polygon#numSides()","int").
+before_type("geometry%.Segment","Segment","geometry").
+before_methodmodifier("shapes%.Triangle#getLength(int)","public").
+before_fieldmodifier("shapes%.Rectangle#width","private").
+before_type("geometry%.Point","Point","geometry").
+before_conditional("isTriangle()","newSegment(points.get(0),points.get(1))Segmentseg2=newSegment(points.get(1),points.get(2))Segmentseg3=newSegment(points.get(2),points.get(0))Triangletri=newTriangle((int)seg1.getLength(),(int)seg2.getLength(),(int)seg3.getLength())returntri.calcArea()","","geometry%.Polygon#getArea()").
+before_return("sample1%.Sample1#main(java.lang%.String[])","void").
+before_return("geometry%.Point#<init>(int,int)","void").
+before_accesses("shapes%.Triangle#a","shapes%.Triangle#calcArea()").
+before_parameter("%.Polygon#isSelfOverlap","geometry%.Polygon#isSelfOverlap()","").
+before_accesses("geometry%.Segment#pt2","geometry%.Segment#getLength()").
+before_type("geometry%.Polygon","Polygon","geometry").
+before_calls("geometry%.Polygon#toString()","java.lang%.String#isEmpty()").
+before_methodmodifier("sample1%.Sample1#printHeader()","private").
+before_method("geometry%.Point#toString()","toString()","geometry%.Point").
+before_return("shapes%.Triangle#getLength(int)","int").
+before_inheritedmethod("numSides()","shapes%.Quadrilateral","shapes%.Rectangle").
+before_package("sample1").
+before_methodbody("shapes%.Triangle#getLength(int)","{ switch (index) { case 1:     return a; case 2:   return b; case 3: return c; } return 0; } ").
+before_return("shapes%.Rectangle#calcArea()","double").
+before_calls("geometry%.Polygon#toString()","java.util%.List#size()").
+before_accesses("geometry%.Point#y","geometry%.Segment#getLength()").
+before_calls("sample1%.Sample1#main(java.lang%.String[])","sample1%.PrettyPrinter#printTail()").
+before_return("shapes%.Triangle#calcArea()","double").
+before_method("shapes%.Polygon#calcArea()","calcArea()","shapes%.Polygon").
+before_calls("geometry%.Polygon#getArea()","shapes%.Triangle#calcArea()").
+before_return("geometry%.Polyline#<init>(java.util%.List)","void").
+before_accesses("shapes%.Rectangle#height","shapes%.Rectangle#calcArea()").
+before_calls("geometry%.Polygon#isSelfOverlap()","geometry%.Segment#getIntersection(geometry%.Segment)").
+before_conditional("count%2>0","returntrue","return false; ","geometry%.Polygon#isInside(geometry%.Point)").
+before_methodmodifier("sample1%.PrettyPrinter#printTail()","public").
+before_accesses("geometry%.Segment#pt1","geometry%.Segment#getLength()").
+before_extends("java.lang%.Object","geometry%.Polygon").
+before_fieldoftype("geometry%.Polygon#points","java.util%.List").
+before_calls("geometry%.Polygon#getArea()","geometry%.Segment#getLength()").
+before_methodbody("geometry%.Segment#toString()","{   return pt1.toString() +  -  + pt2.toString(); } ").
+before_parameter("%.Triangle#getLength","shapes%.Triangle#getLength(int)","int index").
+before_type("shapes%.Rectangle","Rectangle","shapes").
+before_calls("geometry%.Polygon#isInside(geometry%.Point)","java.util%.List#get(int)").
+before_parameter("%.Sample1#main","sample1%.Sample1#main(java.lang%.String[])","String[] args").
+before_methodbody("sample1%.Sample1#printHeader()","{   System.out.println( Evolution considered harmful ); } ").
+before_methodbody("geometry%.Polygon#getArea()","{   if (isTriangle()) {     Segment seg1=new Segment(points.get(0),points.get(1));     Segment seg2=new Segment(points.get(1),points.get(2));     Segment seg3=new Segment(points.get(2),points.get(0));     Triangle tri=new Triangle((int)seg1.getLength(),(int)seg2.getLength(),(int)seg3.getLength());     return tri.calcArea();   }   return 0; } ").
+before_accesses("geometry%.Segment#pt2","geometry%.Segment#toString()").
+before_methodbody("shapes%.Triangle#<init>(int,int,int)","{   this.a=a;   this.b=b;   this.c=c; } ").
+before_methodbody("geometry%.Point#toString()","{   return  (  + x +  , + y+  ) ; } ").
+before_calls("geometry%.Polyline#toString()","java.util%.List#iterator()").
+before_calls("geometry%.Polygon#isInside(geometry%.Point)","geometry%.Segment#<init>(geometry%.Point,geometry%.Point)").
+before_methodmodifier("shapes%.Polygon#calcArea()","public").
+before_calls("geometry%.Polygon#getArea()","java.util%.List#get(int)").
+before_methodbody("shapes%.Triangle#numSides()","{   return 3; } ").
+before_calls("geometry%.Polygon#isInside(geometry%.Point)","geometry%.Point#<init>(int,int)").
+before_method("shapes%.Rectangle#calcArea()","calcArea()","shapes%.Rectangle").
+before_parameter("%.Triangle#numSides","shapes%.Triangle#numSides()","").
+before_parameter("%.Triangle#getAllLengths","shapes%.Triangle#getAllLengths(int[])","int[] lengths").
+before_type("shapes%.Polygon","Polygon","shapes").
+before_method("shapes%.Rectangle#<init>()","<init>()","shapes%.Rectangle").
+before_methodbody("geometry%.Polyline#<init>(java.util%.List)","{   this.points=points; } ").
+before_accesses("geometry%.Point#x","geometry%.Point#<init>(int,int)").
+before_calls("geometry%.Polygon#getArea()","geometry%.Polygon#isTriangle()").
+before_calls("geometry%.Polygon#toString()","java.util%.Iterator#hasNext()").
+before_conditional("xi<Math.min(x3,x4)||xi>Math.max(x3,x4)","returnnull","","geometry%.Segment#getIntersection(geometry%.Segment)").
+before_calls("geometry%.Polygon#isSelfOverlap()","java.util%.List#size()").
+before_calls("geometry%.Polygon#isInside(geometry%.Point)","java.util%.List#size()").
+before_methodmodifier("geometry%.Point#toString()","public").
+before_calls("geometry%.Polygon#toString()","java.util%.List#iterator()").
+before_method("geometry%.Segment#toString()","toString()","geometry%.Segment").
+before_accesses("geometry%.Polygon#points","geometry%.Polygon#getArea()").
+before_extends("java.lang%.Object","geometry%.Segment").
+before_return("shapes%.Triangle#<init>(int,int,int)","void").
+before_fieldmodifier("shapes%.Triangle#a","int").
+before_fieldmodifier("shapes%.Rectangle#height","private").
+before_methodmodifier("geometry%.Segment#getIntersection(geometry%.Segment)","public").
+before_methodbody("sample1%.Sample1#main(java.lang%.String[])","{   Point p=new Point(3,16);   System.out.println( ~~~~~~~~~~~~~~~ );   printHeader();   System.out.println( Point p is at   + p);   PrettyPrinter.printTail();   System.out.println( ~~~~~~~~~~~~~~~ ); } ").
+before_fieldoftype("geometry%.Point#x","int").
+before_accesses("geometry%.Segment#pt1","geometry%.Segment#toString()").
+before_return("geometry%.Segment#toString()","java.lang%.String").
+before_methodmodifier("geometry%.Segment#<init>(geometry%.Point,geometry%.Point)","public").
+before_conditional("s.getIntersection(p2infinity)!=null","count++","","geometry%.Polygon#isInside(geometry%.Point)").
+before_subtype("java.lang%.Object","geometry%.Polygon").
+before_method("shapes%.Triangle#<init>(int,int,int)","<init>(int,int,int)","shapes%.Triangle").
+before_return("shapes%.Polygon#calcArea()","double").
+before_conditional("pt.y>max_y","pt.y","","geometry%.Polygon#isInside(geometry%.Point)").
+before_conditional("pt.y<min_y","pt.y","","geometry%.Polygon#isInside(geometry%.Point)").
+before_extends("java.lang%.Object","sample1%.Sample1").
+before_methodbody("shapes%.Polygon#calcArea()","{   return 0; } ").
+before_extends("shapes%.Polygon","shapes%.Triangle").
+before_methodmodifier("shapes%.Triangle#<init>(int,int,int)","public").
+before_accesses("shapes%.Rectangle#width","shapes%.Rectangle#calcArea()").
+before_parameter("%.Segment#Segment","geometry%.Segment#<init>(geometry%.Point,geometry%.Point)","Point pt1, Point pt2").
+before_type("shapes%.Equilateral","Equilateral","shapes").
+before_method("shapes%.Triangle#getAllLengths(int[])","getAllLengths(int[])","shapes%.Triangle").
+before_method("shapes%.Triangle#calcArea()","calcArea()","shapes%.Triangle").
+before_fieldoftype("geometry%.Point#y","int").
+before_method("geometry%.Polygon#isSelfOverlap()","isSelfOverlap()","geometry%.Polygon").
+before_return("geometry%.Polygon#<init>(java.util%.List)","void").
+before_type("sample1%.PrettyPrinter","PrettyPrinter","sample1").
+before_calls("geometry%.Polygon#isTriangle()","java.util%.List#size()").
+before_type("shapes%.Quadrilateral","Quadrilateral","shapes").
+before_subtype("java.lang%.Object","sample1%.Sample1").
+before_parameter("%.Point#Point","geometry%.Point#<init>(int,int)","int x, int y").
+before_methodbody("geometry%.Segment#<init>(geometry%.Point,geometry%.Point)","{   this.pt1=pt1;   this.pt2=pt2; } ").
+before_parameter("%.Polygon#toString","geometry%.Polygon#toString()","").
+before_method("shapes%.Quadrilateral#numSides()","numSides()","shapes%.Quadrilateral").
+before_subtype("java.lang%.Object","geometry%.Segment").
+before_methodmodifier("geometry%.Polygon#toString()","public").
+before_accesses("shapes%.Triangle#b","shapes%.Triangle#calcArea()").
+before_return("geometry%.Segment#getLength()","double").
+before_inheritedmethod("calcArea()","shapes%.Polygon","shapes%.Rectangle").
+before_method("geometry%.Segment#<init>(geometry%.Point,geometry%.Point)","<init>(geometry%.Point,geometry%.Point)","geometry%.Segment").
+before_accesses("java.lang%.System#out","sample1%.PrettyPrinter#printTail()").
+before_implements("shapes%.Equiangular","shapes%.Rectangle").
+before_methodmodifier("geometry%.Polygon#<init>(java.util%.List)","public").
+before_return("geometry%.Polygon#toString()","java.lang%.String").
+before_method("shapes%.Quadrilateral#<init>()","<init>()","shapes%.Quadrilateral").
+before_calls("geometry%.Polygon#isSelfOverlap()","geometry%.Segment#<init>(geometry%.Point,geometry%.Point)").
+before_accesses("geometry%.Point#y","geometry%.Point#<init>(int,int)").
+before_fieldmodifier("geometry%.Point#y","int").
+before_method("geometry%.Polyline#<init>(java.util%.List)","<init>(java.util%.List)","geometry%.Polyline").
+before_accesses("geometry%.Segment#pt2","geometry%.Segment#<init>(geometry%.Point,geometry%.Point)").
+before_parameter("%.Point#toString","geometry%.Point#toString()","").
+before_parameter("%.Polygon#isTriangle","geometry%.Polygon#isTriangle()","").
+before_methodbody("geometry%.Polygon#<init>(java.util%.List)","{   this.points=points; } ").
+before_parameter("%.Polygon#getArea","geometry%.Polygon#getArea()","").
+before_accesses("shapes%.Triangle#c","shapes%.Triangle#calcArea()").
+before_method("shapes%.Polygon#numSides()","numSides()","shapes%.Polygon").
+before_methodmodifier("geometry%.Segment#getLength()","public").
+before_accesses("geometry%.Polygon#points","geometry%.Polygon#<init>(java.util%.List)").
+before_accesses("shapes%.Triangle#b","shapes%.Triangle#getLength(int)").
+before_accesses("java.lang%.System#out","sample1%.Sample1#printHeader()").
+before_methodmodifier("geometry%.Polygon#isSelfOverlap()","public").
+before_calls("geometry%.Polygon#isInside(geometry%.Point)","geometry%.Segment#getIntersection(geometry%.Segment)").
+before_subtype("java.lang%.Object","geometry%.Polyline").
+before_methodmodifier("sample1%.Sample1#main(java.lang%.String[])","protected").
+before_parameter("%.Polygon#numSides","shapes%.Polygon#numSides()","").
+before_calls("sample1%.Sample1#main(java.lang%.String[])","sample1%.Sample1#printHeader()").
+before_parameter("%.Polygon#Polygon","geometry%.Polygon#<init>(java.util%.List)","List<Point> points").
+before_return("shapes%.Quadrilateral#<init>()","void").
+before_accesses("geometry%.Polygon#points","geometry%.Polygon#isSelfOverlap()").
+before_accesses("shapes%.Triangle#b","shapes%.Triangle#<init>(int,int,int)").
+before_subtype("java.lang%.Object","shapes%.Polygon").
+before_return("geometry%.Polygon#isTriangle()","boolean").
+before_method("sample1%.PrettyPrinter#<init>()","<init>()","sample1%.PrettyPrinter").
+before_parameter("%.Sample1#printHeader","sample1%.Sample1#printHeader()","").
+before_subtype("java.lang%.Object","geometry%.Point").
+before_fieldoftype("geometry%.Segment#pt1","geometry%.Point").
+before_calls("sample1%.Sample1#printHeader()","java.io%.PrintStream#println(java.lang%.String)").
+before_methodbody("geometry%.Polygon#isTriangle()","{   return (points.size() == 3); } ").
+before_method("shapes%.Polygon#<init>()","<init>()","shapes%.Polygon").
+before_parameter("%.Triangle#Triangle","shapes%.Triangle#<init>(int,int,int)","int a, int b, int c").
+before_fieldmodifier("geometry%.Segment#pt1","geometry.Point").
+before_calls("geometry%.Polyline#toString()","java.util%.Iterator#hasNext()").
+before_extends("shapes%.Polygon","shapes%.Quadrilateral").
+before_fieldoftype("shapes%.Triangle#b","int").
+before_methodbody("sample1%.PrettyPrinter#printTail()","{   System.out.println( The End ); } ").
+before_method("geometry%.Polygon#isTriangle()","isTriangle()","geometry%.Polygon").
+before_accesses("geometry%.Point#y","geometry%.Polygon#isInside(geometry%.Point)").
+before_subtype("java.lang%.Object","sample1%.PrettyPrinter").
+before_methodmodifier("geometry%.Point#<init>(int,int)","public").
+before_accesses("shapes%.Triangle#a","shapes%.Triangle#getLength(int)").
+before_calls("shapes%.Triangle#calcArea()","java.lang%.Math#sqrt(double)").
+before_methodbody("shapes%.Rectangle#calcArea()","{   return height * width; } ").
+before_parameter("%.Polyline#Polyline","geometry%.Polyline#<init>(java.util%.List)","List<Point> points").
+before_calls("geometry%.Segment#getIntersection(geometry%.Segment)","java.lang%.Math#min(int,int)").
+before_accesses("shapes%.Triangle#c","shapes%.Triangle#<init>(int,int,int)").
+before_fieldmodifier("geometry%.Polygon#points","List<geometry.Point>").
+before_conditional("points.size()>0"," - +points.get(0)","","geometry%.Polygon#toString()").
+before_method("sample1%.Sample1#<init>()","<init>()","sample1%.Sample1").
+before_conditional("!res.isEmpty()"," - ","","geometry%.Polyline#toString()").
+before_methodbody("geometry%.Polyline#toString()","{   String res=  ;   Iterator<Point> iter=points.iterator();   while (iter.hasNext()) {     if (!res.isEmpty())     res+= - ;     res+=iter.next();   }   return res; } ").
+before_method("shapes%.Triangle#numSides()","numSides()","shapes%.Triangle").
+before_parameter("%.Segment#toString","geometry%.Segment#toString()","").
+before_calls("geometry%.Polyline#toString()","java.lang%.String#isEmpty()").
+before_fieldmodifier("geometry%.Point#x","int").
+before_methodbody("geometry%.Polygon#toString()","{   String res=  ;   Iterator<Point> iter=points.iterator();   while (iter.hasNext()) {     if (!res.isEmpty())     res+= - ;     res+=iter.next();   }   if (points.size() > 0) {     res+= -  + points.get(0);   }   return res; } ").
+before_accesses("geometry%.Polyline#points","geometry%.Polyline#toString()").
+before_fieldoftype("shapes%.Triangle#c","int").
+before_calls("geometry%.Polygon#isSelfOverlap()","java.util%.List#get(int)").
+before_accesses("geometry%.Polygon#points","geometry%.Polygon#toString()").
+before_accesses("geometry%.Point#x","geometry%.Polygon#isInside(geometry%.Point)").
+before_fieldmodifier("shapes%.Triangle#b","int").
+before_field("shapes%.Triangle#a","a","shapes%.Triangle").
+before_method("geometry%.Polyline#toString()","toString()","geometry%.Polyline").
+before_inheritedmethod("calcArea()","shapes%.Polygon","shapes%.Triangle").
+before_calls("sample1%.Sample1#main(java.lang%.String[])","java.io%.PrintStream#println(java.lang%.String)").
+before_return("geometry%.Polygon#isSelfOverlap()","boolean").
+before_methodmodifier("shapes%.Rectangle#calcArea()","public").
+before_field("shapes%.Triangle#b","b","shapes%.Triangle").
+before_return("sample1%.Sample1#<init>()","void").
+before_conditional("j<points.size()-1","newSegment(points.get(j),points.get(j+1))","s2=new Segment(points.get(j),points.get(0)); ","geometry%.Polygon#isSelfOverlap()").
+before_field("geometry%.Polygon#points","points","geometry%.Polygon").
+before_fieldoftype("geometry%.Polyline#points","java.util%.List").
+before_return("geometry%.Point#toString()","java.lang%.String").
+before_extends("shapes%.Quadrilateral","shapes%.Rectangle").
+before_package("shapes").
+before_extends("java.lang%.Object","geometry%.Polyline").
+before_return("shapes%.Quadrilateral#numSides()","int").
+before_field("shapes%.Rectangle#width","width","shapes%.Rectangle").
+before_methodbody("geometry%.Polygon#isSelfOverlap()","{   for (int i=0; i < points.size() - 1; ++i) {     for (int j=i + 1; j < points.size(); ++j) {       Segment s1=new Segment(points.get(i),points.get(i + 1));       Segment s2=null;       if (j < points.size() - 1)       s2=new Segment(points.get(j),points.get(j + 1));  else       s2=new Segment(points.get(j),points.get(0));       if (s1.getIntersection(s2) != null)       return false;     }   }   return true; } ").
+before_extends("java.lang%.Object","shapes%.Polygon").
+before_methodmodifier("shapes%.Quadrilateral#numSides()","public").
+before_type("shapes%.Equiangular","Equiangular","shapes").
+before_fieldmodifier("shapes%.Triangle#c","int").
+before_calls("geometry%.Polygon#getArea()","geometry%.Segment#<init>(geometry%.Point,geometry%.Point)").
+before_methodmodifier("shapes%.Polygon#numSides()","public").
+before_methodmodifier("geometry%.Polyline#toString()","public").
+before_parameter("%.PrettyPrinter#printTail","sample1%.PrettyPrinter#printTail()","").
+before_accesses("geometry%.Point#y","geometry%.Segment#getIntersection(geometry%.Segment)").
+before_accesses("shapes%.Triangle#a","shapes%.Triangle#<init>(int,int,int)").
+before_fieldmodifier("geometry%.Polyline#points","List<geometry.Point>").
+before_parameter("%.Segment#getIntersection","geometry%.Segment#getIntersection(geometry%.Segment)","Segment s").
+before_methodbody("shapes%.Triangle#getAllLengths(int[])","{   lengths=new int[4];   lengths[0]=0;   lengths[1]=a;   lengths[2]=b;   lengths[3]=c;   return lengths.length; } ").
+before_type("geometry%.Polyline","Polyline","geometry").
+before_method("geometry%.Segment#getIntersection(geometry%.Segment)","getIntersection(geometry%.Segment)","geometry%.Segment").
+before_return("shapes%.Triangle#getAllLengths(int[])","int").
+before_extends("java.lang%.Object","geometry%.Point").
+before_methodmodifier("geometry%.Polygon#isTriangle()","public").
+before_methodbody("geometry%.Polygon#isInside(geometry%.Point)","{   int max_x=points.get(0).x;   int max_y=points.get(0).y;   int min_x=points.get(0).x;   int min_y=points.get(0).y;   for (  Point pt : points) {     if (pt.x > max_x)     max_x=pt.x;     if (pt.y > max_y)     max_y=pt.y;     if (pt.x < min_x)     min_x=pt.x;     if (pt.y < min_y)     min_y=pt.y;   }   if (p.x > max_x || p.y > max_y || p.x < min_x || p.y < min_y)   return false;   final int infinity=max_y + 10;   int count=0;   Segment p2infinity=new Segment(p,new Point(p.x,infinity));   for (int i=0; i < points.size() - 1; ++i) {     Segment s=new Segment(points.get(i),points.get(i + 1));     if (s.getIntersection(p2infinity) != null)     count++;   }   Segment s=new Segment(points.get(points.size() - 1),points.get(0));   if (s.getIntersection(p2infinity) != null)   count++;   if (count % 2 > 0)   return true;  else   return false; } ").
+before_calls("geometry%.Polygon#toString()","java.util%.List#get(int)").
+before_return("sample1%.PrettyPrinter#printTail()","void").
+before_accesses("geometry%.Polygon#points","geometry%.Polygon#isInside(geometry%.Point)").
+before_subtype("shapes%.Polygon","shapes%.Quadrilateral").
+before_methodbody("geometry%.Segment#getLength()","{   int a=pt1.x - pt2.x;   int b=pt1.y - pt2.y;   return Math.sqrt(a ^ 2 + b ^ 2); } ").
+before_method("geometry%.Segment#getLength()","getLength()","geometry%.Segment").
+before_calls("geometry%.Polyline#toString()","java.util%.Iterator#next()").
+before_accesses("java.lang%.System#out","sample1%.Sample1#main(java.lang%.String[])").
+before_extends("java.lang%.Object","sample1%.PrettyPrinter").
+before_fieldoftype("shapes%.Triangle#a","int").
+before_conditional("pt.x>max_x","pt.x","","geometry%.Polygon#isInside(geometry%.Point)").
+before_methodmodifier("geometry%.Polygon#getArea()","public").
+before_calls("geometry%.Polygon#getArea()","shapes%.Triangle#<init>(int,int,int)").
+before_calls("geometry%.Segment#getIntersection(geometry%.Segment)","geometry%.Point#<init>(int,int)").
+before_return("shapes%.Triangle#numSides()","int").
+before_field("geometry%.Point#x","x","geometry%.Point").
+before_methodbody("geometry%.Segment#getIntersection(geometry%.Segment)","{   int x1=pt1.x;   int y1=pt1.y;   int x2=pt2.x;   int y2=pt2.y;   int x3=s.pt1.x;   int y3=s.pt1.y;   int x4=s.pt2.x;   int y4=s.pt2.y;   int d=(x1 - x2) * (y3 - y4) - (y1 - y2) * (x3 - x4);   if (d == 0)   return null;   int xi=((x3 - x4) * (x1 * y2 - y1 * x2) - (x1 - x2) * (x3 * y4 - y3 * x4)) / d;   int yi=((y3 - y4) * (x1 * y2 - y1 * x2) - (y1 - y2) * (x3 * y4 - y3 * x4)) / d;   Point p=new Point(xi,yi);   if (xi < Math.min(x1,x2) || xi > Math.max(x1,x2))   return null;   if (xi < Math.min(x3,x4) || xi > Math.max(x3,x4))   return null;   return p; } ").
+before_parameter("%.Polygon#isInside","geometry%.Polygon#isInside(geometry%.Point)","Point p").
+before_accesses("geometry%.Point#x","geometry%.Segment#getIntersection(geometry%.Segment)").
+before_methodbody("geometry%.Point#<init>(int,int)","{   this.x=x;   this.y=y; } ").
+before_parameter("%.Quadrilateral#numSides","shapes%.Quadrilateral#numSides()","").
+before_inheritedmethod("numSides()","shapes%.Polygon","shapes%.Rectangle").
+before_calls("sample1%.PrettyPrinter#printTail()","java.io%.PrintStream#println(java.lang%.String)").
+before_methodmodifier("shapes%.Triangle#calcArea()","public").
+before_parameter("%.Rectangle#calcArea","shapes%.Rectangle#calcArea()","").
+before_conditional("!res.isEmpty()"," - ","","geometry%.Polygon#toString()").
+before_subtype("shapes%.Quadrilateral","shapes%.Rectangle").
+before_methodmodifier("geometry%.Polygon#isInside(geometry%.Point)","public").
+before_accesses("geometry%.Polygon#points","geometry%.Polygon#isTriangle()").
+before_method("geometry%.Polygon#toString()","toString()","geometry%.Polygon").
+before_accesses("shapes%.Triangle#a","shapes%.Triangle#getAllLengths(int[])").
+before_type("sample1%.Sample1","Sample1","sample1").
+before_method("sample1%.Sample1#main(java.lang%.String[])","main(java.lang%.String[])","sample1%.Sample1").
+before_methodmodifier("shapes%.Triangle#numSides()","public").
+before_method("geometry%.Polygon#<init>(java.util%.List)","<init>(java.util%.List)","geometry%.Polygon").
+before_inheritedmethod("numSides()","shapes%.Polygon","shapes%.Quadrilateral").
+before_return("geometry%.Polygon#isInside(geometry%.Point)","boolean").
+before_field("geometry%.Segment#pt1","pt1","geometry%.Segment").
+before_parameter("%.Segment#getLength","geometry%.Segment#getLength()","").
+before_field("shapes%.Triangle#c","c","shapes%.Triangle").
+before_fieldoftype("shapes%.Rectangle#width","int").
+before_methodbody("shapes%.Triangle#calcArea()","{   int p=(a + b + c) / 2;   return Math.sqrt(p * (p - a) * (p - b)* (p - c)); } ").
+before_package("geometry").
+before_return("geometry%.Polyline#toString()","java.lang%.String").
+before_return("shapes%.Polygon#<init>()","void").
+before_return("shapes%.Rectangle#<init>()","void").
+before_accesses("geometry%.Point#y","geometry%.Point#toString()").
+before_methodbody("shapes%.Polygon#numSides()","{   return 0; } ").
+before_accesses("shapes%.Triangle#b","shapes%.Triangle#getAllLengths(int[])").
+before_parameter("%.Triangle#calcArea","shapes%.Triangle#calcArea()","").
+before_accesses("geometry%.Segment#pt1","geometry%.Segment#getIntersection(geometry%.Segment)").
+before_field("geometry%.Segment#pt2","pt2","geometry%.Segment").
+before_return("geometry%.Polygon#getArea()","double").
+before_fieldoftype("shapes%.Rectangle#height","int").
+before_methodmodifier("geometry%.Polyline#<init>(java.util%.List)","public").
+before_return("sample1%.PrettyPrinter#<init>()","void").
+before_field("geometry%.Point#y","y","geometry%.Point").
+before_inheritedmethod("numSides()","shapes%.Polygon","shapes%.Triangle").
+before_methodmodifier("shapes%.Triangle#getAllLengths(int[])","public").
+before_method("geometry%.Polygon#isInside(geometry%.Point)","isInside(geometry%.Point)","geometry%.Polygon").
+before_field("geometry%.Polyline#points","points","geometry%.Polyline").
+before_conditional("d==0","returnnull","","geometry%.Segment#getIntersection(geometry%.Segment)").
+before_method("geometry%.Point#<init>(int,int)","<init>(int,int)","geometry%.Point").
+before_calls("sample1%.Sample1#main(java.lang%.String[])","geometry%.Point#<init>(int,int)").
+before_inheritedmethod("calcArea()","shapes%.Polygon","shapes%.Quadrilateral").
+before_accesses("geometry%.Point#x","geometry%.Point#toString()").
+before_accesses("shapes%.Triangle#c","shapes%.Triangle#getAllLengths(int[])").
+before_accesses("shapes%.Triangle#c","shapes%.Triangle#getLength(int)").
+before_method("geometry%.Polygon#getArea()","getArea()","geometry%.Polygon").
+before_method("shapes%.Triangle#getLength(int)","getLength(int)","shapes%.Triangle").
+before_accesses("geometry%.Segment#pt2","geometry%.Segment#getIntersection(geometry%.Segment)").
+before_fieldmodifier("geometry%.Segment#pt2","geometry.Point").
+before_accesses("geometry%.Polyline#points","geometry%.Polyline#<init>(java.util%.List)").
+before_fieldoftype("geometry%.Segment#pt2","geometry%.Point").
+after_field("geometry%.Segmentedit#pt22","pt22","geometry%.Segmentedit").
+after_conditional("xi<Math.min(x1,x2)||xi>Math.max(x1,x2)","returnnull","","geometry%.Segment#getIntersection(geometry%.Segment)").
+after_method("sample1%.PrettyPrinter#printTail()","printTail()","sample1%.PrettyPrinter").
+after_accesses("geometry%.Segment#data","geometry%.Segment#<init>(geometry%.Point,geometry%.Point)").
+after_conditional("pt.x<min_x","pt.x","","geometry%.Polygon#isInside(geometry%.Point)").
+after_fieldoftype("geometry%.Segmentedit#pt22","geometry%.Point").
+after_parameter("%.Polygon#calcArea","shapes%.Polygon#calcArea()","").
+after_conditional("p.x>max_x||p.y>max_y||p.x<min_x||p.y<min_y","returnfalse","","geometry%.Polygon#isInside(geometry%.Point)").
+after_type("shapes%.Triangle","Triangle","shapes").
+after_return("geometry%.Segment#getIntersection(geometry%.Segment)","geometry%.Point").
+after_return("sample1%.Sample1#printHeader()","void").
+after_methodbody("shapes%.Quadrilateral#numSides()","{   return 3; } ").
+after_conditional("s1.getIntersection(s2)!=null","returnfalse","","geometry%.Polygon#isSelfOverlap()").
+after_calls("geometry%.Polygon#toString()","java.util%.Iterator#next()").
+after_subtype("shapes%.Polygon","shapes%.Triangle").
+after_parameter("%.Polyline#toString","geometry%.Polyline#toString()","").
+after_field("shapes%.Rectangle#height","height","shapes%.Rectangle").
+after_accesses("geometry%.Segmentedit#pt11","geometry%.Segment#<init>(geometry%.Point,geometry%.Point)").
+after_calls("geometry%.Segment#getIntersection(geometry%.Segment)","java.lang%.Math#max(int,int)").
+after_subtype("shapes%.Equiangular","shapes%.Rectangle").
+after_method("sample1%.Sample1#printHeader()","printHeader()","sample1%.Sample1").
+after_return("geometry%.Segment#<init>(geometry%.Point,geometry%.Point)","void").
+after_return("shapes%.Polygon#numSides()","int").
+after_type("geometry%.Segment","Segment","geometry").
+after_methodmodifier("shapes%.Triangle#getLength(int)","public").
+after_fieldmodifier("shapes%.Rectangle#width","private").
+after_type("geometry%.Point","Point","geometry").
+after_return("geometry%.Point#<init>(int,int)","void").
+after_conditional("isTriangle()","newSegment(points.get(0),points.get(1))Segmentseg2=newSegment(points.get(1),points.get(2))Segmentseg3=newSegment(points.get(2),points.get(0))Triangletri=newTriangle((int)seg1.getLength(),(int)seg2.getLength(),(int)seg3.getLength())returntri.calcArea()","","geometry%.Polygon#getArea()").
+after_return("sample1%.Sample1#main(java.lang%.String[])","void").
+after_accesses("shapes%.Triangle#a","shapes%.Triangle#calcArea()").
+after_parameter("%.Polygon#isSelfOverlap","geometry%.Polygon#isSelfOverlap()","").
+after_type("geometry%.Polygon","Polygon","geometry").
+after_calls("geometry%.Polygon#toString()","java.lang%.String#isEmpty()").
+after_methodmodifier("sample1%.Sample1#printHeader()","private").
+after_method("geometry%.Point#toString()","toString()","geometry%.Point").
+after_return("shapes%.Triangle#getLength(int)","int").
+after_method("geometry%.Segmentedit#<init>()","<init>()","geometry%.Segmentedit").
+after_inheritedmethod("numSides()","shapes%.Quadrilateral","shapes%.Rectangle").
+after_package("sample1").
+after_methodbody("shapes%.Triangle#getLength(int)","{ switch (index) { case 1:     return a; case 2:   return b; case 3: return c; } return 0; } ").
+after_return("shapes%.Rectangle#calcArea()","double").
+after_calls("geometry%.Polygon#toString()","java.util%.List#size()").
+after_calls("sample1%.Sample1#main(java.lang%.String[])","sample1%.PrettyPrinter#printTail()").
+after_return("shapes%.Triangle#calcArea()","double").
+after_method("shapes%.Polygon#calcArea()","calcArea()","shapes%.Polygon").
+after_return("geometry%.Segmentedit#getLength()","double").
+after_calls("geometry%.Polygon#getArea()","shapes%.Triangle#calcArea()").
+after_return("geometry%.Polyline#<init>(java.util%.List)","void").
+after_accesses("shapes%.Rectangle#height","shapes%.Rectangle#calcArea()").
+after_calls("geometry%.Polygon#isSelfOverlap()","geometry%.Segment#getIntersection(geometry%.Segment)").
+after_conditional("count%2>0","returntrue","return false; ","geometry%.Polygon#isInside(geometry%.Point)").
+after_methodmodifier("sample1%.PrettyPrinter#printTail()","public").
+after_extends("java.lang%.Object","geometry%.Polygon").
+after_fieldoftype("geometry%.Polygon#points","java.util%.List").
+after_parameter("%.Triangle#getLength","shapes%.Triangle#getLength(int)","int index").
+after_type("shapes%.Rectangle","Rectangle","shapes").
+after_calls("geometry%.Polygon#isInside(geometry%.Point)","java.util%.List#get(int)").
+after_parameter("%.Sample1#main","sample1%.Sample1#main(java.lang%.String[])","String[] args").
+after_accesses("geometry%.Segmentedit#pt22","geometry%.Segmentedit#getLength()").
+after_methodbody("sample1%.Sample1#printHeader()","{   System.out.println( Evolution considered harmful ); } ").
+after_methodbody("geometry%.Polygon#getArea()","{   if (isTriangle()) {     Segment seg1=new Segment(points.get(0),points.get(1));     Segment seg2=new Segment(points.get(1),points.get(2));     Segment seg3=new Segment(points.get(2),points.get(0));     Triangle tri=new Triangle((int)seg1.getLength(),(int)seg2.getLength(),(int)seg3.getLength());     return tri.calcArea();   }   return 0; } ").
+after_methodbody("shapes%.Triangle#<init>(int,int,int)","{   this.a=a;   this.b=b;   this.c=c; } ").
+after_methodbody("geometry%.Point#toString()","{   return  (  + x +  , + y+  ) ; } ").
+after_calls("geometry%.Polyline#toString()","java.util%.List#iterator()").
+after_calls("geometry%.Polygon#isInside(geometry%.Point)","geometry%.Segment#<init>(geometry%.Point,geometry%.Point)").
+after_methodmodifier("shapes%.Polygon#calcArea()","public").
+after_methodbody("shapes%.Triangle#numSides()","{   return 3; } ").
+after_calls("geometry%.Polygon#getArea()","java.util%.List#get(int)").
+after_calls("geometry%.Polygon#isInside(geometry%.Point)","geometry%.Point#<init>(int,int)").
+after_method("shapes%.Rectangle#calcArea()","calcArea()","shapes%.Rectangle").
+after_parameter("%.Triangle#numSides","shapes%.Triangle#numSides()","").
+after_parameter("%.Triangle#getAllLengths","shapes%.Triangle#getAllLengths(int[])","int[] lengths").
+after_type("shapes%.Polygon","Polygon","shapes").
+after_type("geometry%.Segmentedit","Segmentedit","geometry").
+after_method("shapes%.Rectangle#<init>()","<init>()","shapes%.Rectangle").
+after_methodbody("geometry%.Polyline#<init>(java.util%.List)","{   this.points=points; } ").
+after_accesses("geometry%.Point#x","geometry%.Point#<init>(int,int)").
+after_calls("geometry%.Polygon#getArea()","geometry%.Polygon#isTriangle()").
+after_calls("geometry%.Polygon#toString()","java.util%.Iterator#hasNext()").
+after_methodbody("geometry%.Segmentedit#toString()","{   return pt11.toString() +  -  + pt22.toString(); } ").
+after_accesses("geometry%.Segmentedit#pt11","geometry%.Segmentedit#toString()").
+after_conditional("xi<Math.min(x3,x4)||xi>Math.max(x3,x4)","returnnull","","geometry%.Segment#getIntersection(geometry%.Segment)").
+after_calls("geometry%.Polygon#isSelfOverlap()","java.util%.List#size()").
+after_methodmodifier("geometry%.Point#toString()","public").
+after_calls("geometry%.Polygon#isInside(geometry%.Point)","java.util%.List#size()").
+after_calls("geometry%.Polygon#toString()","java.util%.List#iterator()").
+after_accesses("geometry%.Segmentedit#pt11","geometry%.Segmentedit#getLength()").
+after_accesses("geometry%.Polygon#points","geometry%.Polygon#getArea()").
+after_extends("java.lang%.Object","geometry%.Segment").
+after_return("shapes%.Triangle#<init>(int,int,int)","void").
+after_fieldmodifier("shapes%.Triangle#a","int").
+after_fieldmodifier("shapes%.Rectangle#height","private").
+after_methodmodifier("geometry%.Segment#getIntersection(geometry%.Segment)","public").
+after_methodbody("sample1%.Sample1#main(java.lang%.String[])","{   Point p=new Point(3,16);   System.out.println( ~~~~~~~~~~~~~~~ );   printHeader();   System.out.println( Point p is at   + p);   PrettyPrinter.printTail();   System.out.println( ~~~~~~~~~~~~~~~ ); } ").
+after_fieldoftype("geometry%.Point#x","int").
+after_methodmodifier("geometry%.Segment#<init>(geometry%.Point,geometry%.Point)","public").
+after_conditional("s.getIntersection(p2infinity)!=null","count++","","geometry%.Polygon#isInside(geometry%.Point)").
+after_subtype("java.lang%.Object","geometry%.Polygon").
+after_method("shapes%.Triangle#<init>(int,int,int)","<init>(int,int,int)","shapes%.Triangle").
+after_return("shapes%.Polygon#calcArea()","double").
+after_conditional("pt.y>max_y","pt.y","","geometry%.Polygon#isInside(geometry%.Point)").
+after_conditional("pt.y<min_y","pt.y","","geometry%.Polygon#isInside(geometry%.Point)").
+after_extends("java.lang%.Object","sample1%.Sample1").
+after_methodbody("shapes%.Polygon#calcArea()","{   return 0; } ").
+after_field("geometry%.Segmentedit#pt11","pt11","geometry%.Segmentedit").
+after_extends("shapes%.Polygon","shapes%.Triangle").
+after_methodmodifier("shapes%.Triangle#<init>(int,int,int)","public").
+after_calls("geometry%.Segmentedit#toString()","geometry%.Point#toString()").
+after_accesses("shapes%.Rectangle#width","shapes%.Rectangle#calcArea()").
+after_type("shapes%.Equilateral","Equilateral","shapes").
+after_parameter("%.Segment#Segment","geometry%.Segment#<init>(geometry%.Point,geometry%.Point)","Point pt1, Point pt2").
+after_fieldmodifier("geometry%.Segment#data","private").
+after_method("shapes%.Triangle#getAllLengths(int[])","getAllLengths(int[])","shapes%.Triangle").
+after_method("shapes%.Triangle#calcArea()","calcArea()","shapes%.Triangle").
+after_fieldoftype("geometry%.Point#y","int").
+after_method("geometry%.Polygon#isSelfOverlap()","isSelfOverlap()","geometry%.Polygon").
+after_return("geometry%.Polygon#<init>(java.util%.List)","void").
+after_type("sample1%.PrettyPrinter","PrettyPrinter","sample1").
+after_type("shapes%.Quadrilateral","Quadrilateral","shapes").
+after_calls("geometry%.Polygon#isTriangle()","java.util%.List#size()").
+after_subtype("java.lang%.Object","sample1%.Sample1").
+after_parameter("%.Point#Point","geometry%.Point#<init>(int,int)","int x, int y").
+after_parameter("%.Polygon#toString","geometry%.Polygon#toString()","").
+after_method("shapes%.Quadrilateral#numSides()","numSides()","shapes%.Quadrilateral").
+after_subtype("java.lang%.Object","geometry%.Segment").
+after_methodmodifier("geometry%.Polygon#toString()","public").
+after_return("geometry%.Segmentedit#toString()","java.lang%.String").
+after_accesses("shapes%.Triangle#b","shapes%.Triangle#calcArea()").
+after_field("geometry%.Segment#data","data","geometry%.Segment").
+after_inheritedmethod("calcArea()","shapes%.Polygon","shapes%.Rectangle").
+after_method("geometry%.Segment#<init>(geometry%.Point,geometry%.Point)","<init>(geometry%.Point,geometry%.Point)","geometry%.Segment").
+after_accesses("java.lang%.System#out","sample1%.PrettyPrinter#printTail()").
+after_implements("shapes%.Equiangular","shapes%.Rectangle").
+after_return("geometry%.Polygon#toString()","java.lang%.String").
+after_methodmodifier("geometry%.Polygon#<init>(java.util%.List)","public").
+after_method("shapes%.Quadrilateral#<init>()","<init>()","shapes%.Quadrilateral").
+after_calls("geometry%.Polygon#isSelfOverlap()","geometry%.Segment#<init>(geometry%.Point,geometry%.Point)").
+after_accesses("geometry%.Point#y","geometry%.Point#<init>(int,int)").
+after_accesses("geometry%.Segmentedit#pt22","geometry%.Segment#getIntersection(geometry%.Segment)").
+after_fieldmodifier("geometry%.Point#y","int").
+after_method("geometry%.Polyline#<init>(java.util%.List)","<init>(java.util%.List)","geometry%.Polyline").
+after_method("geometry%.Segmentedit#getLength()","getLength()","geometry%.Segmentedit").
+after_accesses("geometry%.Segment#data","geometry%.Segment#getIntersection(geometry%.Segment)").
+after_parameter("%.Point#toString","geometry%.Point#toString()","").
+after_parameter("%.Polygon#isTriangle","geometry%.Polygon#isTriangle()","").
+after_fieldoftype("geometry%.Segmentedit#pt11","geometry%.Point").
+after_methodbody("geometry%.Polygon#<init>(java.util%.List)","{   this.points=points; } ").
+after_parameter("%.Polygon#getArea","geometry%.Polygon#getArea()","").
+after_accesses("shapes%.Triangle#c","shapes%.Triangle#calcArea()").
+after_method("shapes%.Polygon#numSides()","numSides()","shapes%.Polygon").
+after_accesses("geometry%.Polygon#points","geometry%.Polygon#<init>(java.util%.List)").
+after_accesses("shapes%.Triangle#b","shapes%.Triangle#getLength(int)").
+after_accesses("java.lang%.System#out","sample1%.Sample1#printHeader()").
+after_methodmodifier("geometry%.Polygon#isSelfOverlap()","public").
+after_calls("geometry%.Polygon#isInside(geometry%.Point)","geometry%.Segment#getIntersection(geometry%.Segment)").
+after_subtype("java.lang%.Object","geometry%.Polyline").
+after_methodmodifier("sample1%.Sample1#main(java.lang%.String[])","protected").
+after_parameter("%.Polygon#numSides","shapes%.Polygon#numSides()","").
+after_calls("sample1%.Sample1#main(java.lang%.String[])","sample1%.Sample1#printHeader()").
+after_parameter("%.Polygon#Polygon","geometry%.Polygon#<init>(java.util%.List)","List<Point> points").
+after_return("shapes%.Quadrilateral#<init>()","void").
+after_accesses("shapes%.Triangle#b","shapes%.Triangle#<init>(int,int,int)").
+after_accesses("geometry%.Polygon#points","geometry%.Polygon#isSelfOverlap()").
+after_subtype("java.lang%.Object","shapes%.Polygon").
+after_return("geometry%.Polygon#isTriangle()","boolean").
+after_accesses("geometry%.Segmentedit#pt22","geometry%.Segmentedit#toString()").
+after_method("sample1%.PrettyPrinter#<init>()","<init>()","sample1%.PrettyPrinter").
+after_subtype("java.lang%.Object","geometry%.Point").
+after_parameter("%.Sample1#printHeader","sample1%.Sample1#printHeader()","").
+after_calls("sample1%.Sample1#printHeader()","java.io%.PrintStream#println(java.lang%.String)").
+after_methodbody("geometry%.Polygon#isTriangle()","{   return (points.size() == 3); } ").
+after_method("shapes%.Polygon#<init>()","<init>()","shapes%.Polygon").
+after_parameter("%.Triangle#Triangle","shapes%.Triangle#<init>(int,int,int)","int a, int b, int c").
+after_calls("geometry%.Polyline#toString()","java.util%.Iterator#hasNext()").
+after_fieldoftype("shapes%.Triangle#b","int").
+after_extends("shapes%.Polygon","shapes%.Quadrilateral").
+after_methodbody("sample1%.PrettyPrinter#printTail()","{   System.out.println( The End ); } ").
+after_method("geometry%.Polygon#isTriangle()","isTriangle()","geometry%.Polygon").
+after_accesses("geometry%.Point#y","geometry%.Polygon#isInside(geometry%.Point)").
+after_methodmodifier("geometry%.Point#<init>(int,int)","public").
+after_subtype("java.lang%.Object","sample1%.PrettyPrinter").
+after_methodbody("geometry%.Segment#<init>(geometry%.Point,geometry%.Point)","{   data.pt11=pt1;   data.pt22=pt2; } ").
+after_method("geometry%.Segmentedit#toString()","toString()","geometry%.Segmentedit").
+after_accesses("shapes%.Triangle#a","shapes%.Triangle#getLength(int)").
+after_calls("shapes%.Triangle#calcArea()","java.lang%.Math#sqrt(double)").
+after_parameter("%.Polyline#Polyline","geometry%.Polyline#<init>(java.util%.List)","List<Point> points").
+after_methodbody("shapes%.Rectangle#calcArea()","{   return height * width; } ").
+after_calls("geometry%.Segment#getIntersection(geometry%.Segment)","java.lang%.Math#min(int,int)").
+after_accesses("shapes%.Triangle#c","shapes%.Triangle#<init>(int,int,int)").
+after_fieldmodifier("geometry%.Polygon#points","List<geometry.Point>").
+after_conditional("points.size()>0"," - +points.get(0)","","geometry%.Polygon#toString()").
+after_method("sample1%.Sample1#<init>()","<init>()","sample1%.Sample1").
+after_method("shapes%.Triangle#numSides()","numSides()","shapes%.Triangle").
+after_conditional("!res.isEmpty()"," - ","","geometry%.Polyline#toString()").
+after_methodbody("geometry%.Polyline#toString()","{   String res=  ;   Iterator<Point> iter=points.iterator();   while (iter.hasNext()) {     if (!res.isEmpty())     res+= - ;     res+=iter.next();   }   return res; } ").
+after_calls("geometry%.Polyline#toString()","java.lang%.String#isEmpty()").
+after_fieldmodifier("geometry%.Point#x","int").
+after_fieldoftype("shapes%.Triangle#c","int").
+after_accesses("geometry%.Polyline#points","geometry%.Polyline#toString()").
+after_methodbody("geometry%.Polygon#toString()","{   String res=  ;   Iterator<Point> iter=points.iterator();   while (iter.hasNext()) {     if (!res.isEmpty())     res+= - ;     res+=iter.next();   }   if (points.size() > 0) {     res+= -  + points.get(0);   }   return res; } ").
+after_accesses("geometry%.Polygon#points","geometry%.Polygon#toString()").
+after_calls("geometry%.Polygon#isSelfOverlap()","java.util%.List#get(int)").
+after_accesses("geometry%.Point#x","geometry%.Polygon#isInside(geometry%.Point)").
+after_fieldmodifier("shapes%.Triangle#b","int").
+after_field("shapes%.Triangle#a","a","shapes%.Triangle").
+after_method("geometry%.Polyline#toString()","toString()","geometry%.Polyline").
+after_inheritedmethod("calcArea()","shapes%.Polygon","shapes%.Triangle").
+after_accesses("geometry%.Point#y","geometry%.Segmentedit#getLength()").
+after_calls("sample1%.Sample1#main(java.lang%.String[])","java.io%.PrintStream#println(java.lang%.String)").
+after_fieldmodifier("geometry%.Segmentedit#pt22","geometry.Point").
+after_return("geometry%.Polygon#isSelfOverlap()","boolean").
+after_methodmodifier("shapes%.Rectangle#calcArea()","public").
+after_field("shapes%.Triangle#b","b","shapes%.Triangle").
+after_return("sample1%.Sample1#<init>()","void").
+after_conditional("j<points.size()-1","newSegment(points.get(j),points.get(j+1))","s2=new Segment(points.get(j),points.get(0)); ","geometry%.Polygon#isSelfOverlap()").
+after_fieldoftype("geometry%.Polyline#points","java.util%.List").
+after_field("geometry%.Polygon#points","points","geometry%.Polygon").
+after_return("geometry%.Point#toString()","java.lang%.String").
+after_extends("shapes%.Quadrilateral","shapes%.Rectangle").
+after_package("shapes").
+after_extends("java.lang%.Object","geometry%.Polyline").
+after_return("shapes%.Quadrilateral#numSides()","int").
+after_parameter("%.Segmentedit#getLength","geometry%.Segmentedit#getLength()","").
+after_field("shapes%.Rectangle#width","width","shapes%.Rectangle").
+after_methodbody("geometry%.Polygon#isSelfOverlap()","{   for (int i=0; i < points.size() - 1; ++i) {     for (int j=i + 1; j < points.size(); ++j) {       Segment s1=new Segment(points.get(i),points.get(i + 1));       Segment s2=null;       if (j < points.size() - 1)       s2=new Segment(points.get(j),points.get(j + 1));  else       s2=new Segment(points.get(j),points.get(0));       if (s1.getIntersection(s2) != null)       return false;     }   }   return true; } ").
+after_extends("java.lang%.Object","shapes%.Polygon").
+after_methodmodifier("shapes%.Quadrilateral#numSides()","public").
+after_type("shapes%.Equiangular","Equiangular","shapes").
+after_fieldmodifier("shapes%.Triangle#c","int").
+after_methodmodifier("shapes%.Polygon#numSides()","public").
+after_methodmodifier("geometry%.Polyline#toString()","public").
+after_calls("geometry%.Polygon#getArea()","geometry%.Segment#<init>(geometry%.Point,geometry%.Point)").
+after_accesses("geometry%.Point#x","geometry%.Segmentedit#getLength()").
+after_parameter("%.PrettyPrinter#printTail","sample1%.PrettyPrinter#printTail()","").
+after_accesses("geometry%.Point#y","geometry%.Segment#getIntersection(geometry%.Segment)").
+after_accesses("shapes%.Triangle#a","shapes%.Triangle#<init>(int,int,int)").
+after_fieldmodifier("geometry%.Polyline#points","List<geometry.Point>").
+after_methodbody("shapes%.Triangle#getAllLengths(int[])","{   lengths=new int[4];   lengths[0]=0;   lengths[1]=a;   lengths[2]=b;   lengths[3]=c;   return lengths.length; } ").
+after_parameter("%.Segment#getIntersection","geometry%.Segment#getIntersection(geometry%.Segment)","Segment s").
+after_type("geometry%.Polyline","Polyline","geometry").
+after_return("shapes%.Triangle#getAllLengths(int[])","int").
+after_method("geometry%.Segment#getIntersection(geometry%.Segment)","getIntersection(geometry%.Segment)","geometry%.Segment").
+after_extends("java.lang%.Object","geometry%.Point").
+after_methodmodifier("geometry%.Polygon#isTriangle()","public").
+after_methodbody("geometry%.Polygon#isInside(geometry%.Point)","{   int max_x=points.get(0).x;   int max_y=points.get(0).y;   int min_x=points.get(0).x;   int min_y=points.get(0).y;   for (  Point pt : points) {     if (pt.x > max_x)     max_x=pt.x;     if (pt.y > max_y)     max_y=pt.y;     if (pt.x < min_x)     min_x=pt.x;     if (pt.y < min_y)     min_y=pt.y;   }   if (p.x > max_x || p.y > max_y || p.x < min_x || p.y < min_y)   return false;   final int infinity=max_y + 10;   int count=0;   Segment p2infinity=new Segment(p,new Point(p.x,infinity));   for (int i=0; i < points.size() - 1; ++i) {     Segment s=new Segment(points.get(i),points.get(i + 1));     if (s.getIntersection(p2infinity) != null)     count++;   }   Segment s=new Segment(points.get(points.size() - 1),points.get(0));   if (s.getIntersection(p2infinity) != null)   count++;   if (count % 2 > 0)   return true;  else   return false; } ").
+after_return("sample1%.PrettyPrinter#printTail()","void").
+after_calls("geometry%.Polygon#toString()","java.util%.List#get(int)").
+after_subtype("shapes%.Polygon","shapes%.Quadrilateral").
+after_accesses("geometry%.Polygon#points","geometry%.Polygon#isInside(geometry%.Point)").
+after_calls("geometry%.Polyline#toString()","java.util%.Iterator#next()").
+after_accesses("java.lang%.System#out","sample1%.Sample1#main(java.lang%.String[])").
+after_fieldoftype("shapes%.Triangle#a","int").
+after_extends("java.lang%.Object","sample1%.PrettyPrinter").
+after_conditional("pt.x>max_x","pt.x","","geometry%.Polygon#isInside(geometry%.Point)").
+after_methodmodifier("geometry%.Polygon#getArea()","public").
+after_calls("geometry%.Polygon#getArea()","shapes%.Triangle#<init>(int,int,int)").
+after_return("shapes%.Triangle#numSides()","int").
+after_calls("geometry%.Segment#getIntersection(geometry%.Segment)","geometry%.Point#<init>(int,int)").
+after_field("geometry%.Point#x","x","geometry%.Point").
+after_methodmodifier("geometry%.Segmentedit#toString()","public").
+after_parameter("%.Polygon#isInside","geometry%.Polygon#isInside(geometry%.Point)","Point p").
+after_accesses("geometry%.Point#x","geometry%.Segment#getIntersection(geometry%.Segment)").
+after_methodbody("geometry%.Point#<init>(int,int)","{   this.x=x;   this.y=y; } ").
+after_parameter("%.Quadrilateral#numSides","shapes%.Quadrilateral#numSides()","").
+after_inheritedmethod("numSides()","shapes%.Polygon","shapes%.Rectangle").
+after_methodbody("geometry%.Segment#getIntersection(geometry%.Segment)","{   int x1=data.pt11.x;   int y1=data.pt11.y;   int x2=data.pt22.x;   int y2=data.pt22.y;   int x3=s.data.pt11.x;   int y3=s.data.pt11.y;   int x4=s.data.pt22.x;   int y4=s.data.pt22.y;   int d=(x1 - x2) * (y3 - y4) - (y1 - y2) * (x3 - x4);   if (d == 0)   return null;   int xi=((x3 - x4) * (x1 * y2 - y1 * x2) - (x1 - x2) * (x3 * y4 - y3 * x4)) / d;   int yi=((y3 - y4) * (x1 * y2 - y1 * x2) - (y1 - y2) * (x3 * y4 - y3 * x4)) / d;   Point p=new Point(xi,yi);   if (xi < Math.min(x1,x2) || xi > Math.max(x1,x2))   return null;   if (xi < Math.min(x3,x4) || xi > Math.max(x3,x4))   return null;   return p; } ").
+after_calls("sample1%.PrettyPrinter#printTail()","java.io%.PrintStream#println(java.lang%.String)").
+after_methodmodifier("shapes%.Triangle#calcArea()","public").
+after_parameter("%.Rectangle#calcArea","shapes%.Rectangle#calcArea()","").
+after_conditional("!res.isEmpty()"," - ","","geometry%.Polygon#toString()").
+after_subtype("shapes%.Quadrilateral","shapes%.Rectangle").
+after_methodmodifier("geometry%.Polygon#isInside(geometry%.Point)","public").
+after_accesses("geometry%.Polygon#points","geometry%.Polygon#isTriangle()").
+after_method("geometry%.Polygon#toString()","toString()","geometry%.Polygon").
+after_accesses("shapes%.Triangle#a","shapes%.Triangle#getAllLengths(int[])").
+after_subtype("java.lang%.Object","geometry%.Segmentedit").
+after_type("sample1%.Sample1","Sample1","sample1").
+after_fieldmodifier("geometry%.Segmentedit#pt11","geometry.Point").
+after_methodmodifier("shapes%.Triangle#numSides()","public").
+after_method("sample1%.Sample1#main(java.lang%.String[])","main(java.lang%.String[])","sample1%.Sample1").
+after_method("geometry%.Polygon#<init>(java.util%.List)","<init>(java.util%.List)","geometry%.Polygon").
+after_inheritedmethod("numSides()","shapes%.Polygon","shapes%.Quadrilateral").
+after_return("geometry%.Polygon#isInside(geometry%.Point)","boolean").
+after_field("shapes%.Triangle#c","c","shapes%.Triangle").
+after_methodbody("shapes%.Triangle#calcArea()","{   int p=(a + b + c) / 2;   return Math.sqrt(p * (p - a) * (p - b)* (p - c)); } ").
+after_fieldoftype("shapes%.Rectangle#width","int").
+after_package("geometry").
+after_return("geometry%.Polyline#toString()","java.lang%.String").
+after_return("shapes%.Polygon#<init>()","void").
+after_return("shapes%.Rectangle#<init>()","void").
+after_accesses("geometry%.Point#y","geometry%.Point#toString()").
+after_methodbody("geometry%.Segmentedit#getLength()","{   int a=pt11.x - pt22.x;   int b=pt11.y - pt22.y;   return Math.sqrt(a ^ 2 + b ^ 2); } ").
+after_methodbody("shapes%.Polygon#numSides()","{   return 0; } ").
+after_accesses("shapes%.Triangle#b","shapes%.Triangle#getAllLengths(int[])").
+after_accesses("geometry%.Segmentedit#pt11","geometry%.Segment#getIntersection(geometry%.Segment)").
+after_parameter("%.Triangle#calcArea","shapes%.Triangle#calcArea()","").
+after_extends("java.lang%.Object","geometry%.Segmentedit").
+after_parameter("%.Segmentedit#toString","geometry%.Segmentedit#toString()","").
+after_calls("geometry%.Segmentedit#getLength()","java.lang%.Math#sqrt(double)").
+after_return("geometry%.Polygon#getArea()","double").
+after_fieldoftype("geometry%.Segment#data","geometry%.Segmentedit").
+after_fieldoftype("shapes%.Rectangle#height","int").
+after_methodmodifier("geometry%.Polyline#<init>(java.util%.List)","public").
+after_return("sample1%.PrettyPrinter#<init>()","void").
+after_field("geometry%.Point#y","y","geometry%.Point").
+after_inheritedmethod("numSides()","shapes%.Polygon","shapes%.Triangle").
+after_methodmodifier("shapes%.Triangle#getAllLengths(int[])","public").
+after_method("geometry%.Polygon#isInside(geometry%.Point)","isInside(geometry%.Point)","geometry%.Polygon").
+after_field("geometry%.Polyline#points","points","geometry%.Polyline").
+after_conditional("d==0","returnnull","","geometry%.Segment#getIntersection(geometry%.Segment)").
+after_method("geometry%.Point#<init>(int,int)","<init>(int,int)","geometry%.Point").
+after_calls("sample1%.Sample1#main(java.lang%.String[])","geometry%.Point#<init>(int,int)").
+after_inheritedmethod("calcArea()","shapes%.Polygon","shapes%.Quadrilateral").
+after_accesses("geometry%.Point#x","geometry%.Point#toString()").
+after_accesses("shapes%.Triangle#c","shapes%.Triangle#getAllLengths(int[])").
+after_accesses("shapes%.Triangle#c","shapes%.Triangle#getLength(int)").
+after_method("shapes%.Triangle#getLength(int)","getLength(int)","shapes%.Triangle").
+after_method("geometry%.Polygon#getArea()","getArea()","geometry%.Polygon").
+after_return("geometry%.Segmentedit#<init>()","void").
+after_accesses("geometry%.Polyline#points","geometry%.Polyline#<init>(java.util%.List)").
+after_accesses("geometry%.Segmentedit#pt22","geometry%.Segment#<init>(geometry%.Point,geometry%.Point)").
+after_methodmodifier("geometry%.Segmentedit#getLength()","public").

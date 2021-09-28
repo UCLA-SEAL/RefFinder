@@ -1,0 +1,9 @@
+1275375697394	Rename method 'hasModifier'
+1275375892674	Rename method 'setInstanceNameSpaceParent'
+1275538075561	Pull up members to 'EBComponent'
+1275539221145	Pull up members to 'DockingLayout'
+1275545808276	Pull up 'buffer' to 'CompletionPopup'
+1275551337705	Move member 'FLOATING'
+1275552165332	Move member 'FLOATING'
+1275553179481	Move member 'FLOATING'
+1275603692374	Delete element

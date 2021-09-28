@@ -1,0 +1,12 @@
+package account;
+
+public class Account {
+	
+	int withdraw(int amount){
+		if(amount > _balance){
+			return
+		}
+			
+	}
+
+}

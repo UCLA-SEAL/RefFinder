@@ -1,0 +1,20 @@
+package account;
+
+public class Account {
+	
+	int _balance;
+	
+	public boolean isNull(){
+		return false;
+	}
+	
+	int withdraw(int amount) throws BalanceException{
+		if(amount > _balance) throw new BalanceException();
+			_balance -= amount;
+			return _balance;
+	}
+	
+	public int getPlan(){
+		
+	}
+}

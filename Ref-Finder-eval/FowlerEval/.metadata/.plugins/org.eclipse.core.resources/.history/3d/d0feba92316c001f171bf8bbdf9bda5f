@@ -1,0 +1,31 @@
+
+public class Item {
+	private int quantity;
+	private int itemPrice;
+	
+	public double getPrice(){
+		int basePrice = quantity * itemPrice;
+		double finalPrice = discountedPrice(basePrice);
+		return finalPrice;
+	}
+	
+	private double discountedPrice(int basePrice){
+		double output;
+		if (getDiscountLevel() == 2)
+			output = basePrice * 0.1;
+		else
+			output = basePrice * 0.05;
+		return output;
+	}
+	
+	private int getDiscountLevel(){
+		int discountLevel;
+		if (quantity > 100)
+			discountLevel = 2;
+		else
+			discountLevel = 1;
+		return discountLevel;
+	}
+	
+	public void someMethod(){}
+}

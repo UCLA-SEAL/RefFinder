@@ -1,0 +1,25 @@
+package org.gjt.sp.jedit.bsh;
+
+import java.lang.reflect.Field;
+
+public class LHSField extends LHS{
+	
+
+	LHSField( Object object, Field field )
+	{
+		if ( object == null)
+			throw new NullPointerException("constructed empty LHS");
+
+		type = FIELD;
+		this.object = object;
+		this.field = field;
+	}
+	
+	LHSField( Field field )
+	{
+		type = FIELD;
+		this.object = null;
+		this.field = field;
+	}
+	
+}

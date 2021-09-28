@@ -1,0 +1,54 @@
+
+
+public class Computation {
+	
+	private Date summer_start;
+	private Date summer_end;
+	private int quantity;
+	private int winterRate;
+	private int winterServiceCharge;
+	private int summerRate;
+	
+	public Computation(Date summerStart, Date summerEnd, int quantity,
+			int winterRate, int winterServiceCharge, int summerRate) {
+		summer_start = summerStart;
+		summer_end = summerEnd;
+		this.quantity = quantity;
+		this.winterRate = winterRate;
+		this.winterServiceCharge = winterServiceCharge;
+		this.summerRate = summerRate;
+	}
+	
+	public void aMethod(){
+		int a = 0;
+	}
+	public void paramCheckMethod(String a){}
+	
+	public int strictGetInvcdtlmt(){
+		int creditLimit = 0;
+		return creditLimit;
+	}
+	
+	public void credit_method_edit(){
+		strictGetInvcdtlmt();
+	}
+	public int getinvcdtlmt(){
+		int creditLimit = 0;
+		return creditLimit;
+	}
+
+	public int computeCharge1(Date date){
+		int charge_edit = 0;
+		if (isSummer(date)){
+			charge_edit = quantity * winterRate + winterServiceCharge;
+		}
+		else{
+			charge_edit = quantity * summerRate;
+		}
+		return charge_edit;
+	}
+
+	private boolean isSummer(Date date) {
+		return date.before(summer_start) || date.after(summer_end);
+	}
+}

@@ -1,0 +1,50 @@
+package shapes;
+
+public class Triangle {
+	int a, b, c;
+	int p;
+	double k;
+
+	public Triangle(int a, int b, int c) {
+		this.a=a;
+		this.b=b;
+		this.c=c;
+	}
+	public int numSides() {
+		return 3;
+	}
+
+	public void calcArea() {
+		// Add some code here because inline method should
+		// never be used on a pointless method like this.
+		double f = p/(long)3;
+		//use Heron's formula to calculate area
+		heron();
+	}
+	
+	public void heron(){
+		p = (a + b + c)/2;
+		k = Math.sqrt(p*(p-a)*(p-b)*(p-c));
+	}
+	
+	public int getLength(int index) {
+		switch (index) {
+		case 1:
+			return a;
+		case 2:
+			return b;
+		case 3:
+			return c;
+		}
+		return 0;
+	}
+
+	public int getAllLengths(int[] lengths) {
+		lengths = new int[4];
+		lengths[0]=0;
+		lengths[1]=a;
+		lengths[2]=b;
+		lengths[3]=c;
+		return lengths.length;
+	}
+}
