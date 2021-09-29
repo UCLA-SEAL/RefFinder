@@ -1,12 +1,33 @@
-# Ref-Finder
+# RefFinder
+Template-based Reconstruction of Complex Refactorings
 
 [Website for Ref-Finder Tool Demo](https://sites.google.com/site/reffindertool/)
 
+## Summary of RefFinder
 RefFinder  identifies complex refactorings between two program versions using a template-based refactoring reconstruction approach---RefFinder expresses each refactoring type in terms of template logic rules and uses a logic programming engine to infer concrete refactoring instances. It currently supports sixty three refactoring types from Fowler's catalog, showing the most comprehensive coverage among existing techniques.
 
-Reference:
-Research Paper: [Template-based Reconstruction of Complex Refactorings, Kyle Prete, Napol Rachatasumrit, Nikita Sudan, and Miryung Kim, ICSM '10](http://web.cs.ucla.edu/~miryung/Publications/icsm10-reffinder.pdf)
+## Team
+This project is developed by Professor [Miryung Kim](http://web.cs.ucla.edu/~miryung/)'s Software Engineering and Analysis Laboratory at UCLA. 
+If you encounter any problems, please open an issue or feel free to contact us:
 
+[Miryung Kim](http://web.cs.ucla.edu/~miryung/): Professor at UCLA, miryung@cs.ucla.edu;
+
+## How to cite
+Please refer to our ICSM '10 research paper, [Template-based Reconstruction of Complex Refactorings](http://web.cs.ucla.edu/~miryung/Publications/icsm10-reffinder.pdf) for more details.
+### Bibtex  
+```
+@inproceedings{inproceedings,
+	author = {Kim, Miryung and Gee, Matthew and Loh, Alex and Rachatasumrit, Napol},
+	year = {2010},
+	month = {01},
+	pages = {371-372},
+	title = {Ref-Finder: A refactoring reconstruction tool based on logic query templates},
+	journal = {Proceedings of the ACM SIGSOFT Symposium on the Foundations of Software Engineering},
+	doi = {10.1145/1882291.1882353}
+}
+```
+
+## Usage
 Tool Demo: [Ref-Finder: a Refactoring Reconstruction Tool based on Logic Query Templates, Miryung Kim, Matthew Gee, Alex Loh, and Napol Rachatasumrit, FSE' 10](http://web.cs.ucla.edu/~miryung/Publications/fse10-reffindertool.pdf)
 
 Here is an example on how to use Ref-Finder jar file to identify refactorings. 
@@ -17,15 +38,13 @@ public class YourRefFinderView extends ViewPart {
   public void createPartControl(Composite p) {
     Application refFinder = new Application();
     try {
-					refFinder.myStart(projOrig, projDelta, null);
-					String xmlFilePath = projDelta.getLocation().toOSString()+System.getProperty("file.separator") +"RefList.xml";
-					XmlReader xml = new XmlReader(xmlFilePath);
-					//please refer to XmlReader and XMLOutput for more details
-				} catch (Exception e1) {
-				}
+	refFinder.myStart(projOrig, projDelta, null);
+	String xmlFilePath = projDelta.getLocation().toOSString()+System.getProperty("file.separator") +"RefList.xml";
+	XmlReader xml = new XmlReader(xmlFilePath);
+	//please refer to XmlReader and XMLOutput for more details
+    } catch (Exception e1) {}
 ```
 
-## Usage
 
 Step 1: Create your own Eclipse Plugin Project, import RefFinder_1.0.0.jar to classpath
 
